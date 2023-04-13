@@ -1,5 +1,5 @@
 import pygame
-
+from pathlib import Path
 
 class FontRenderer:
     def __init__(
@@ -108,7 +108,7 @@ class TextRenderer:
     @staticmethod
     def get_file_contents():
         lines = []
-        with open("/home/prashant/Desktop/pygame/TODO/list/list.txt") as f:
+        with open(Path("list/list.txt")) as f:
             title = f.readline()[:-1]
 
             while True:

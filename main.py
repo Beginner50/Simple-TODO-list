@@ -1,4 +1,3 @@
-#!/home/prashant/Desktop/pygame/.venv/bin/python3
 import pygame
 from renderer import Renderer
 import os
@@ -6,7 +5,7 @@ import os
 
 class Main:
     def __init__(self) -> None:
-        posx, posy = 1000, 400
+        posx, posy = 966, 330
         os.environ["SDL_VIDEO_WINDOW_POS"] = f"{posx},{posy}"
 
         pygame.init()

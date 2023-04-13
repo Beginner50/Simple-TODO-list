@@ -56,7 +56,7 @@ class Renderer:
             # Opens text editor
             if pygame.mouse.get_pressed()[0]:
                 self.ticks = 20
-                self.list_writing_proc = subprocess.Popen(["kate", "list/list.txt"])
+                self.list_writing_proc = subprocess.Popen(["notepad", "list/list.txt"])
 
         if self.bg_button_rect.collidepoint(*mouse_pos):
             self.foreground.change_foreground(bg_button_clicked=True)
