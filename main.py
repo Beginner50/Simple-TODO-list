@@ -19,9 +19,9 @@ class Main:
 
     def run(self):
         while True:
-            dt = self.clock.tick() / 1000
+            self.clock.tick(60)
 
-            self.renderer.run(dt)
+            self.renderer.run()
 
             pygame.display.update()
 
